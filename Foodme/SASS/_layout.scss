@@ -1,0 +1,25 @@
+.header {
+  min-height: 70rem;
+
+  display: flex;
+  justify-content: flex-start;
+
+  background-image: linear-gradient(
+      to right,
+      #bad29f,
+      rgba(204, 245, 172, 0.356)
+    ),
+    url("../img/salad-2068220_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer {
+  display: flex;
+  min-height: 40rem;
+  background-color: var(--color-primary-dark);
+  justify-content: space-around;
+  align-items: center;
+}

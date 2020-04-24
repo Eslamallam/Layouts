@@ -1,0 +1,103 @@
+:root {
+  --color-primary: #091921;
+  --color-primary-1: #215e65;
+  --color-primary-2: #00fff1;
+  --color-primary-3: #6f6f6f6f;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  --line: 1px solid var(--color-grey-light-2); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-primary); }
+
+.container {
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 3.5rem;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8); }
+
+.form {
+  max-height: 60rem;
+  max-width: 30rem; }
+  .form-control {
+    padding: 1rem; }
+    .form-control-inpt {
+      font-size: 1.4rem;
+      width: 25rem;
+      height: 3.5rem;
+      outline: none;
+      color: var(--color-primary-3);
+      border: 1px solid var(--color-primary);
+      border-radius: 15px;
+      background-color: var(--color-primary);
+      box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.1), 2px 2px 4px rgba(0, 0, 0, 0.8); }
+    .form-control-lbl {
+      color: var(--color-primary-1);
+      font-size: 1.5rem;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.5rem; }
+    .form-control-paragraph {
+      color: var(--color-primary-1);
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem; }
+    .form-control-radio, .form-control-radio-inpt {
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer; }
+      .form-control-radio .fa, .form-control-radio-inpt .fa {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        background: var(--color-primary);
+        line-height: 4rem;
+        text-align: center;
+        margin: 0 0.4rem;
+        color: var(--color-primary-3);
+        font-size: 1.4rem;
+        border-radius: 50%;
+        box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8); }
+        .form-control-radio .fa:hover, .form-control-radio-inpt .fa:hover {
+          box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8), inset -2px -2px 10px rgba(255, 255, 255, 0.05), inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+          cursor: pointer; }
+      .form-control-radio:checked ~ .fa, .form-control-radio-inpt:checked ~ .fa {
+        color: #00fff1;
+        box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+        text-shadow: 0 0 5px #00fff1, 0 0 20px #00fff1; }
+  .form-control-btn {
+    text-align: right; }
+    .form-control-btn .btn-submit {
+      padding: 1rem 1.7rem;
+      border-radius: 15px;
+      outline: none;
+      border: none;
+      background-color: var(--color-primary);
+      color: var(--color-primary-3);
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-shadow: 0 0 2.5px var(--color-primary-3), 0 0 10px var(--color-primary-3);
+      box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8); }
+      .form-control-btn .btn-submit:hover {
+        box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8), inset -2px -2px 10px rgba(255, 255, 255, 0.05), inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer; }

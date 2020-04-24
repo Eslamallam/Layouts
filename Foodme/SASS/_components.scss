@@ -1,0 +1,240 @@
+//////////////////////////
+//// HEADER
+
+.header-logo {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.header-nav {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  list-style: none;
+  position: relative;
+
+  &-item {
+    margin-right: 1.5rem;
+    text-decoration: none;
+  }
+
+  &-link:link,
+  &-link:visited {
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.3rem 2rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+  }
+
+  &-link:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s;
+  }
+
+  &-link-active {
+    color: var(--color-primary) !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+}
+
+//////////////////////////
+//// MAIN HEAD
+
+.main-heading {
+  position: absolute;
+  top: 30rem;
+  left: 10rem;
+  max-width: 50rem;
+
+  &-primary {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  &-text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 40rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 1rem;
+  }
+}
+
+//////////////////////////
+//// BTN INLINE
+
+.btn-inline {
+  margin-top: 1rem;
+  outline: none;
+  padding: 1.2rem 2.5rem;
+  background-color: var(--color-primary-1);
+  border: none;
+  color: white;
+  font-weight: 500;
+  box-shadow: var(--shadow-light);
+
+  &:hover {
+    transform: scale(1);
+    transition: all 0.2s;
+    cursor: pointer;
+    span {
+      margin-left: 8px;
+    }
+  }
+}
+
+//////////////////////////
+//// EXPLORE HEAD
+
+.explore {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary);
+
+  &-main-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  &-main-text {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}
+
+//////////////////////////
+//// GALLERY
+
+.gallery {
+  display: flex;
+  padding: 2rem;
+  margin-top: 3rem;
+
+  &-item {
+    background-color: var(--color-grey-light-1);
+    margin: 0.5rem;
+    padding: 0.8rem;
+    box-shadow: --shadow-light;
+  }
+
+  &-photo {
+    width: 95%;
+    height: 32rem;
+    display: block;
+  }
+
+  &-photo:hover {
+    transform: scale(1.02);
+    transition: all 0.2s;
+  }
+
+  &-caption {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    &-text {
+      font-weight: 500;
+      font-size: 1.7rem;
+      color: var(--color-primary);
+    }
+
+    &-icon-star {
+      width: 1.75rem;
+      height: 1.75rem;
+      fill: var(--color-primary-1);
+    }
+  }
+}
+
+//////////////////////////
+//// ORDER
+
+.order {
+  padding: 10rem;
+  display: flex;
+  background-image: linear-gradient(
+    to right bottom,
+    #bad29f,
+    rgba(204, 245, 172, 0.356)
+  );
+
+  &-photo {
+    flex: 0 0 60%;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    &-heading {
+      font-size: 2rem;
+      padding: 3rem 2rem;
+      color: var(--color-primary);
+      text-transform: uppercase;
+    }
+
+    &-code {
+      text-transform: uppercase;
+      font-size: 1.65rem;
+      padding: 2rem 2rem;
+      color: var(--color-primary-dark);
+      display: flex;
+
+      & > span {
+        background-color: #ff8552;
+        padding: 0.4rem;
+        color: #fff;
+        font-weight: 500;
+        margin-left: 0.75rem;
+      }
+    }
+  }
+}
+
+//////////////////////////
+//// FOOTER
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-grey-light-1);
+}
+
+.useful-links {
+  list-style: none;
+
+  &-link:link,
+  &-link:visited {
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.3rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &-link:hover {
+    transform: scale(1.06);
+    transition: all 0.2s;
+  }
+}
